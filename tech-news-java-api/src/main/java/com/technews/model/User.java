@@ -3,15 +3,15 @@ package com.technews.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
-import javax.xml.stream.events.Comment;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
+@SuppressWarnings("ALL")
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Table(name = "user")
-public class User<Vote> implements Serializable {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
